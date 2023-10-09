@@ -1,0 +1,79 @@
+<html>
+    <head>
+
+        <style>
+            button {
+                width: 50px;
+                height: 50px;
+                margin: 5px;
+            }
+            #operator {
+                width: 50px;
+                height: 50px;
+                margin: 5px;
+                text-align: center;
+            }
+
+            #result {
+                width: 180px;
+                height: 50px;
+                margin: 5px;
+                text-align: right;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div>
+            <input readonly id="operator">
+            <input readonly type="number" id="result">
+        </div>
+
+        <div>
+            <button id="n7">7</button>
+            <button id="n8">8</button>
+            <button id="n9">9</button>
+            <button id="op_plus">+</button>
+        </div>
+        <div>
+            <button id="n4">4</button>
+            <button id="n5">5</button>
+            <button id="n6">6</button>
+            <button id="op_sub">-</button>
+        </div>
+        <div>
+            <button id="n1">1</button>
+            <button id="n2">2</button>
+            <button id="n3">3</button>
+            <button id="op_mul">*</button>
+        </div>
+        <div>
+            <button id="op_clear">AC</button>
+            <button id="n0">0</button>
+            <button id="op_calc">=</button>
+            <button id="op_div">/</button>
+        </div>
+
+        <script>
+
+            let numFirst = ''; // 계산 입력 첫 번째 숫자
+            let numSecond = ''; // 계산 입력 두 번째 숫자
+            let op_input = null;
+
+            document.querySelector('#n0').addEventListener('click', ()=>{
+                numFirst = numFirst + '0'
+            });
+            document.querySelector('#n1').addEventListener('click', ()=>{console.log('1 누름')});
+            document.querySelector('#n2').addEventListener('click', ()=>{console.log('2 누름')});
+            document.querySelector('#n3').addEventListener('click', ()=>{console.log('3 누름')});
+            document.querySelector('#n4').addEventListener('click', ()=>{console.log('4 누름')});
+            document.querySelector('#n5').addEventListener('click', ()=>{console.log('5 누름')});
+            document.querySelector('#n6').addEventListener('click', ()=>{console.log('6 누름')});
+            document.querySelector('#n7').addEventListener('click', ()=>{console.log('7 누름')});
+            document.querySelector('#n8').addEventListener('click', ()=>{console.log('8 누름')});
+            document.querySelector('#n9').addEventListener('click', ()=>{console.log('9 누름')});
+
+
+        </script>
+    </body>
+</html>
